@@ -26,7 +26,7 @@ export default {
 
   data() {
     return {
-      name: "Ullevi",
+      name: "Ullevi Restaurang & Konferens",
       menu: ""
     };
   },
