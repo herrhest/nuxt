@@ -56,6 +56,10 @@
           <b-col>
             <Beat/>
           </b-col>
+          
+          <b-col>
+            <UG/>
+          </b-col>
         </div>
       </div>
     </div>
@@ -72,6 +76,7 @@ import Matsmak from "@/components/Matsmak.vue";
 import Mvg from "@/components/Mvg.vue";
 import Vallagat from "@/components/Vallagat.vue";
 import Ullevi from "@/components/Ullevi.vue";
+import UG from "@/components/UG.vue";
 import Beat from "@/components/Beat.vue";
 
 export default {
@@ -110,7 +115,8 @@ export default {
     Mvg,
     Vallagat,
     Beat,
-    Ullevi
+    Ullevi,
+    UG
   },
 
   methods: {
