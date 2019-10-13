@@ -2,7 +2,11 @@
   <div class="dailylunchgarda">
     <div class="container">
       <h1>Dagens Lunch Gårda</h1>
-      <p class="lead">Dagens lunch Gårda, Göteborg.</p>
+      <p class="lead">Week {{weekNumber}}</p>
+      <p>
+        <i>Dagens lunch Gårda</i> is your daily source of inspiration for a delicious snack in Gårda, Göteborg.
+        <br/>The restaurants below is listed in ascending distance from a certain office somewhere at Vädursgatan. Enjoy your meal.
+      </p>
 
       <!-- Hide if its weekend -->
 
@@ -90,6 +94,9 @@ export default {
   computed: {
     today() {
       return this.$store.state.day.day;
+    },
+    weekNumber() {
+      return this.$store.state.week.week;
     }
   },
 
