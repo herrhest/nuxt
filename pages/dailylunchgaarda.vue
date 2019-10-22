@@ -5,7 +5,7 @@
       <p class="lead">Week {{weekNumber}}</p>
       <p>
         <i>Dagens lunch Gårda</i> is your daily source of inspiration for a delicious snack in Gårda, Göteborg.
-        <br/>The restaurants below is listed in ascending distance from a certain office somewhere at Vädursgatan. Enjoy your meal.
+        <br />The restaurants below is listed in ascending distance from a certain office somewhere at Vädursgatan. Enjoy your meal.
       </p>
 
       <!-- Hide if its weekend -->
@@ -88,7 +88,9 @@ import Ulleochvi from "@/components/Ulleochvi.vue";
 import UG from "@/components/UG.vue";
 import Beat from "@/components/Beat.vue";
 
+import axios from 'axios';
 export default {
+ 
   name: "app",
 
   computed: {

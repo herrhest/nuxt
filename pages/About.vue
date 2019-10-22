@@ -8,9 +8,9 @@
         <a href="mailto:yourstruly@ericthewolf.com">@yourstruly</a>'s attempts of using modern web components.
       </p>
 
-      <img alt src="../assets/doge.webp">
+      <img alt src="../assets/doge.webp" />
 
-      <hr>
+      <hr />
       <h4>Tech used for the menu page</h4>
 
       <p>
@@ -28,6 +28,23 @@
         <a href="https://nuxtjs.org/">@nuxt</a> and
         <a href="https://bootstrap-vue.js.org/">@bootstrap-vue</a>.
       </p>
+      <pre><code data-sourcepos="26:1-43:0" class="language-javascript">var moment = require('moment')
+export const state = () =&gt; ({
+  week: getWeek()
+})
+
+export const mutations = {
+  updateWeek(state, number) {
+    state.week = number
+  }
+}
+
+export var getWeek = function () {
+  var week = moment().format('w')
+  return week
+}
+
+</code></pre>
     </div>
   </div>
 </template>
@@ -48,7 +65,12 @@ export default {
           content:
             "This site consists of @yourstruly's attempts of using modern web components."
         }
-      ]
+      ],
+      metaInfo: {
+        link: [
+          { rel: "stylesheet", href: "https://myCDN.com/prism@v1.x/themes/prism.css" }          
+        ]
+      }
     };
   },
 

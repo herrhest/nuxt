@@ -1,7 +1,6 @@
-var moment = require('moment');
+var moment = require('moment')
 export const state = () => ({
   week: getWeek()
-
 })
 
 export const mutations = {
@@ -11,10 +10,6 @@ export const mutations = {
 }
 
 export var getWeek = function () {
-
-   
-  var week = moment().format('w');
-  //var week = 1
+  var week = moment().format('w')
   return week
-
 }

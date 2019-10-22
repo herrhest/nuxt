@@ -9,8 +9,6 @@
 </template>
 
 <script>
-var url = "https://ericthewolf.com/matsmak";
-
 export default {
   computed: {
     day() {
@@ -20,7 +18,7 @@ export default {
   watch: {
     day() {
       //watch for changes to store object, then reload the card
-      this.fetchMenu();
+      this.getSingleDayMenu();
     }
   },
 
@@ -33,21 +31,14 @@ export default {
 
   created: function() {
     //get menu on first load
-    this.fetchMenu();
+    this.getSingleDayMenu();
   },
 
   methods: {
-    fetchMenu() {
+    getSingleDayMenu() {
       this.menu = "";
-      //get day from the store
       var day = this.$store.state.day.day;
-
-      this.$axios
-        .get(url)
-        .then(response => (this.menu = response.data[day].dayMenu.join("\n\n")))
-        .catch(function(error) {
-          console.log(error);
-        });
+      this.menu = this.$store.state.matsmakMenu[day].dayMenu.join("\n\n");
     }
   }
 };
