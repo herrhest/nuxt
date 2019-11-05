@@ -38,7 +38,7 @@ export default {
     getSingleDayMenu() {
       this.menu = "";
       var day = this.$store.state.day.day;
-      this.menu = this.$store.state.vallagatMenu[day].dayMenu.join("\n\n");
+      this.menu = this.$store.state.ugMenu[day].dayMenu.join("\n\n");
     }
   }
 };

@@ -117,7 +117,7 @@ export const actions = {
             .catch(function (error) {
                 console.log(error);
             })
-        commit('updateUlleochviMenu', ugMenu)
+        commit('updateUgMenu', ugMenu)
         
         //Ulle & Vi
         var ulleochviUrl = "https://ericthewolf.com/ulleochvi";
@@ -126,7 +126,7 @@ export const actions = {
             .catch(function (error) {
                 console.log(error);
             })
-        commit('updateUgMenu', ulleochviMenu)
+        commit('updateUlleochviMenu', ulleochviMenu)
         
     }
 }
