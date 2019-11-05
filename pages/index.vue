@@ -1,15 +1,11 @@
 <template>
   <div class="home">
     <div id="splash" class="container">
-      <h1>Hi there</h1>
-      <p class="lead">
-        Have a look at today's menu:
-        <br />
-        <br />
-        <nuxt-link to="/dailylunchgaarda">
-          <b-button variant="info">Dagens lunch Gårda</b-button>
-        </nuxt-link>
-      </p>
+      <h1>Hi there, have a look at today's menu</h1>
+      <br>
+      <nuxt-link to="/dailylunchgaarda">
+        <b-button variant="info" size="lg">Dagens lunch Gårda</b-button>
+      </nuxt-link>
     </div>
   </div>
 </template>

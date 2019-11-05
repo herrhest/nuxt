@@ -2,11 +2,11 @@
   <div class="dailylunchgarda">
     <div class="container">
       <h1>Dagens Lunch Gårda</h1>
-      <p class="lead">Week {{weekNumber}}</p>
-      <p>
+      <p class="">Week {{weekNumber}}</p>
+      <h2 class = "lead">
         <i>Dagens lunch Gårda</i> is your daily source of inspiration for a delicious snack in Gårda, Göteborg.
         <br />The restaurants below is listed in ascending distance from a certain office somewhere at Vädursgatan. Enjoy your meal.
-      </p>
+      </h2>
 
       <!-- Hide if its weekend -->
 

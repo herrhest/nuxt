@@ -1,30 +1,26 @@
 <template>
   <div class="about">
     <div class="container">
-      <h1>About</h1>
+      
 
-      <p class="lead">
-        This site consists of
+      <h1>
         <a href="mailto:yourstruly@ericthewolf.com">@yourstruly</a>'s attempts of using modern web components.
-      </p>
+      </h1>
 
       <img alt src="../assets/doge.webp" />
 
       <hr />
-      <h4>Tech used for the menu page</h4>
+      <h2>Tech used for the menu page</h2>
 
       <p>
-        Backend:
+        Backend:<br>
         <a href="https://www.raspberrypi.org/">@raspberrypi</a> running
-        <a href="https://nodejs.org/en/">@nodeJS</a>.
-        , exposing an API built with
-        <a href="http://cheerio.js.org/">@cheerio</a>,
-        <a href="https://vuex.vuejs.org/">@vuex</a> and
-        <a href="https://github.com/axios/axios">@axios</a>.
+        <a href="https://nodejs.org/en/">@nodeJS</a>. <br>
+        Using <a href="http://cheerio.js.org/">@cheerio</a> as a collector to feed a <a href="https://vuex.vuejs.org/">@vuex</a> store through a local <a href="https://github.com/axios/axios">@axios</a> api.
       </p>
 
       <p>
-        Frontend:
+        Frontend:<br>
         <a href="https://nuxtjs.org/">@nuxt</a> and
         <a href="https://bootstrap-vue.js.org/">@bootstrap-vue</a>.
       </p>
