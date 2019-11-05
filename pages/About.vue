@@ -28,7 +28,6 @@
         <a href="https://nuxtjs.org/">@nuxt</a> and
         <a href="https://bootstrap-vue.js.org/">@bootstrap-vue</a>.
       </p>
-     
     </div>
   </div>
 </template>
@@ -41,20 +40,21 @@ export default {
   head() {
     return {
       title: "About | ericthewolf",
+      link: [
+        {
+          rel: "canonical",
+          href: "https://ericthewolf.com" + this.$route.path
+        }
+      ],
       meta: [
         // hid is used as unique identifier. Do not use `vmid` for it as it will not work
         {
           hid: "ericthewolf_About",
-          name: "ericthewolf | About",
+          name: "description",
           content:
             "This site consists of @yourstruly's attempts of using modern web components."
         }
-      ],
-      metaInfo: {
-        link: [
-          { rel: "stylesheet", href: "https://myCDN.com/prism@v1.x/themes/prism.css" }          
-        ]
-      }
+      ]
     };
   },
 

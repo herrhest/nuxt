@@ -88,11 +88,8 @@ import Ulleochvi from "@/components/Ulleochvi.vue";
 import UG from "@/components/UG.vue";
 import Beat from "@/components/Beat.vue";
 
-import axios from 'axios';
+import axios from "axios";
 export default {
- 
-  name: "app",
-
   computed: {
     today() {
       return this.$store.state.day.day;
@@ -110,13 +107,20 @@ export default {
 
   head() {
     return {
-      title: "Dagens Lunch Gårda | ericthewolf",
+      title: "Daily Lunch Gårda | ericthewolf",
+      link: [
+        {
+          rel: "canonical",
+          href: "https://ericthewolf.com" + this.$route.path
+        }
+      ],
       meta: [
         // hid is used as unique identifier. Do not use `vmid` for it as it will not work
         {
           hid: "ericthewolf_dailylunchgaarda",
-          name: "Dagens Lunch Gårda",
-          content: "Daily lunch Gårda, Göteborg. Dagens lunch Gårda, Göteborg."
+          name: "description",
+          content:
+            "Daily lunch Gårda, Göteborg. Your daily source of inspiration for a delicious snack in Gårda, Göteborg"
         }
       ]
     };

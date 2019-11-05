@@ -21,11 +21,18 @@ export default {
   head() {
     return {
       title: "Home | ericthewolf",
+      link: [
+        {
+          rel: "canonical",
+          href: "https://ericthewolf.com" + this.$route.path
+        }
+      ],
       meta: [
         // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+
         {
-          hid: "ericthewolf_About",
-          name: "ericthewolf | About",
+          hid: "ericthewolf_home",
+          name: "description",
           content:
             "This site consists of @yourstruly's attempts of using modern web components. Have a look at today's lunch menu if you want to eat @ Gårda, Göteborg."
         }
