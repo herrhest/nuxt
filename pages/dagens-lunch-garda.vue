@@ -1,17 +1,19 @@
 <template>
-  <div class="dailylunchgarda">
+  <div class="dagens-lunch-garda">
     <div class="container">
       <div class="container">
         <div class="row">
           <div class="col-lg">
-            <h1>Daily Lunch Gårda, Week {{weekNumber}}</h1>
+            <h1>Dagens Lunch Gårda, Vecka {{weekNumber}}</h1>
             <h2 class="lead">
-              <i>Dagens lunch Gårda</i> is your daily source of inspiration for a delicious snack in Gårda, Göteborg.
-              <br />The restaurants below is listed in ascending distance from a certain office somewhere at Vädursgatan.
+              <i>Dagens lunch Gårda</i> är din dagliga inspritationskälla för lunch i Gårda, Göteborg.
+              <br />Restaurangerna nedan är sorterade på avstånd från ett kontor någonstans på Vädursgatan.
             </h2>
           </div>
         </div>
       </div>
+
+      <div class="float-right" id="lang"></div>
 
       <!-- Hide if its weekend -->
 
@@ -30,11 +32,11 @@
           content-class="mt-3"
           active-nav-item-class="text-dark "
         >
-          <b-tab title-link-class="text-secondary" title="Monday" @click="handler(0)"></b-tab>
-          <b-tab title-link-class="text-secondary" title="Tuesday" @click="handler(1)"></b-tab>
-          <b-tab title-link-class="text-secondary" title="Wednesday" @click="handler(2)"></b-tab>
-          <b-tab title-link-class="text-secondary" title="Thursday" @click="handler(3)"></b-tab>
-          <b-tab title-link-class="text-secondary" title="Friday" @click="handler(4)"></b-tab>
+          <b-tab title-link-class="text-secondary" title="Måndag" @click="handler(0)"></b-tab>
+          <b-tab title-link-class="text-secondary" title="Tisdag" @click="handler(1)"></b-tab>
+          <b-tab title-link-class="text-secondary" title="Onsdag" @click="handler(2)"></b-tab>
+          <b-tab title-link-class="text-secondary" title="Torsdag" @click="handler(3)"></b-tab>
+          <b-tab title-link-class="text-secondary" title="Fredag" @click="handler(4)"></b-tab>
         </b-tabs>
 
         <div class="cardrow d-inline-flex justify-content-center flex-row">
@@ -76,21 +78,20 @@
         </div>
       </div>
       <div class="col-auto" id="language">
-      <b-button size="sm" class variant="outline-light">
-        <nuxt-link to="/dagens-lunch-garda">
-          <country-flag country="se" size="normal" />
-        </nuxt-link>
-      </b-button>
+        <b-button size="sm" class="active" variant="outline-light">
+          <nuxt-link to="/dagens-lunch-garda">
+            <country-flag country="se" size="normal" />
+          </nuxt-link>
+        </b-button>
+        <b-button size="sm" class variant="outline-light">
+          <nuxt-link to="/dailylunchgaarda">
+            <country-flag country="gb" size="normal" />
+          </nuxt-link>
+        </b-button>
+      </div>
+      <br />
+    </div>
 
-      <b-button size="sm" class="active" variant="outline-light">
-        <nuxt-link to="/dailylunchgaarda">
-          <country-flag class country="gb" size="normal" />
-        </nuxt-link>
-      </b-button>
-    </div>
-    <br>
-    </div>
-    
     <router-view></router-view>
   </div>
 </template>
@@ -127,20 +128,23 @@ export default {
 
   head() {
     return {
-      title: "Daily Lunch Gårda | ericthewolf",
+      title: "Dagens Lunch Gårda | ericthewolf",
       link: [
         {
           rel: "canonical",
           href: "https://ericthewolf.com" + this.$route.path
         }
       ],
+      htmlAttrs: {
+        lang: "sv"
+      },
       meta: [
         // hid is used as unique identifier. Do not use `vmid` for it as it will not work
         {
-          hid: "ericthewolf_dailylunchgaarda",
+          hid: "dagens-lunch-garda",
           name: "description",
           content:
-            "Daily lunch Gårda, Göteborg. Your daily source of inspiration for a delicious snack in Gårda, Göteborg"
+            "Dagens lunch Gårda, Göteborg. Din dagliga inspritationskälla för lunch i Gårda, Göteborg."
         }
       ]
     };

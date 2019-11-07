@@ -3,7 +3,7 @@
     <div id="splash" class="container">
       <h1>Hi there, have a look at today's menu</h1>
       <br>
-      <nuxt-link to="/dailylunchgaarda">
+      <nuxt-link to="/dagens-lunch-garda">
         <b-button variant="info" size="lg">Dagens lunch Gårda</b-button>
       </nuxt-link>
     </div>
