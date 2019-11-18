@@ -1,18 +1,64 @@
 <template>
   <div class="home">
-    <div id="splash" class="container">
-      <h1>Hi there, have a look at today's menu</h1>
-      <br>
-      <nuxt-link to="/dagens-lunch-garda">
-        <b-button variant="info" size="lg">Dagens lunch Gårda</b-button>
-      </nuxt-link>
-    </div>
+    <b-container>
+      <b-col class="mx-auto" justify-content="center">
+        <h1>A study in using modern web components. And bikes.</h1>
+        <p>This site is yourstruly's training ground for very small scale full stack development. And bikes. Why? Don't know.</p>
+        <b-img alt src="../assets/programming_jao.gif" />
+        <br />
+        <br />
+        <p>
+          Check out
+          <nuxt-link to="/dagens-lunch-garda">today's menu</nuxt-link>,
+          or check out some of
+          <nuxt-link to="/Bikes">my bikes</nuxt-link>.
+        </p>
+        <h2>Tech used for the menu page</h2>
+        <p>
+          Backend:
+          <br />
+          <a href="https://www.raspberrypi.org/">@raspberrypi</a> running
+          <a href="https://nodejs.org/en/">@nodeJS</a>.
+          <br />Using
+          <a href="http://cheerio.js.org/">@cheerio</a> as a collector to feed a
+          <a href="https://vuex.vuejs.org/">@vuex</a> store through a local
+          <a href="https://github.com/axios/axios">@axios</a> api.
+        </p>
+
+        <p>
+          Frontend:
+          <br />
+          <a href="https://nuxtjs.org/">@nuxt</a> and
+          <a href="https://bootstrap-vue.js.org/">@bootstrap-vue</a>.
+        </p>
+
+        <p>
+          If you have questions, improvements or
+          <i>other</i>, don't hesitate to contact me.
+        </p>
+        <p>
+          <a href="mailto:yourstruly@ericthewolf.com">
+            <b-img thumbnail src="../assets/yourstruly.jpg"></b-img>
+          </a>
+          <br />
+          <i>Yours sincerely, yourstruly, {{month}}, {{year}}.</i>
+        </p>
+      </b-col>
+    </b-container>
   </div>
 </template>
 
 <script>
 export default {
   components: {},
+  computed: {
+    month() {
+      return this.$store.state.date.month;
+    },
+    year() {
+      return this.$store.state.date.year;
+    }
+  },
 
   head() {
     return {
@@ -39,4 +85,15 @@ export default {
 </script>
 
 <style scoped>
+p {
+  overflow: hidden;
+  max-width: 75ch;
+
+  font-size: 21px !important;
+
+  margin-bottom: 20px;
+
+  font-weight: 300;
+  line-height: 1.4;
+}
 </style>

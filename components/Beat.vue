@@ -12,7 +12,7 @@
 export default {
   computed: {
     day() {
-      return this.$store.state.day.day;
+      return this.$store.state.date.day;
     }
   },
   watch: {
@@ -37,7 +37,7 @@ export default {
   methods: {
     getSingleDayMenu() {
       this.menu = "";
-      var day = this.$store.state.day.day;
+      var day = this.$store.state.date.day;
       this.menu = this.$store.state.beatMenu[day].dayMenu.join("\n\n");
     }
   }

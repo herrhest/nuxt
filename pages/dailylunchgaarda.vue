@@ -109,13 +109,15 @@ import UG from "@/components/UG.vue";
 import Beat from "@/components/Beat.vue";
 
 import axios from "axios";
+
+
 export default {
   computed: {
     today() {
-      return this.$store.state.day.day;
+      return this.$store.state.date.day;
     },
     weekNumber() {
-      return this.$store.state.week.week;
+      return this.$store.state.date.week;
     }
   },
 
@@ -161,12 +163,14 @@ export default {
 
   methods: {
     updateDayState(newDay) {
-      this.$store.commit("day/updateDay", newDay);
+      this.$store.commit("date/updateDay", newDay);
     },
     handler: function(day) {
       this.updateDayState(day);
     }
   }
+  
+
 };
 </script>
 
