@@ -4,7 +4,7 @@
       <b-col class="mx-auto" justify-content="center">
         <h1>A study in using modern web components. And bikes.</h1>
         <p>This site is yourstruly's training ground for very small scale full stack development. And bikes. Why? Don't know.</p>
-        <b-img alt src="../assets/programming_jao.gif" />
+        <b-img class="fixed-ratio-resize" alt src="../assets/programming_jao.gif" />
         <br />
         <br />
         <p>
@@ -96,4 +96,9 @@ p {
   font-weight: 300;
   line-height: 1.4;
 }
+.fixed-ratio-resize {
+  max-width: 100%;
+  height: auto;
+  width: auto\9;
+  }
 </style>
