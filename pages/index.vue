@@ -3,8 +3,8 @@
     <b-container>
       <b-col class="mx-auto" justify-content="center">
         <h1>A study in using modern web components. And bikes.</h1>
-        <p>This site is yourstruly's training ground for very small scale full stack development. And bikes. Why? Don't know.</p>
-        <b-img class="fixed-ratio-resize" alt src="../assets/programming_jao.gif" />
+        <p>This site is yourstruly's training ground for very small scale full stack development. And bikes.</p>
+        <b-img class="fixed-ratio-resize" alt src="../assets/doge.webp" />
         <br />
         <br />
         <p>
@@ -34,13 +34,12 @@
 
         <p>
           If you have questions, improvements or
-          <i>other</i>, don't hesitate to contact me.
+          <i>other</i>, don't hesitate to <a href="mailto:yourstruly@ericthewolf.com">
+           
+          contact me</a>.
         </p>
         <p>
-          <a href="mailto:yourstruly@ericthewolf.com">
-            <b-img thumbnail src="../assets/yourstruly.jpg"></b-img>
-          </a>
-          <br />
+                    
           <i>Yours sincerely, yourstruly, {{month}}, {{year}}.</i>
         </p>
       </b-col>

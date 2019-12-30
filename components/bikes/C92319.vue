@@ -12,7 +12,7 @@
     ></b-card>
     <br />
 
-    <b-collapse id="readmorebutton">
+    <b-collapse id="readmorebutton" visible>
       <b-button
         class="float-right"
         variant="info"
@@ -22,7 +22,7 @@
     </b-collapse>
 
     <!--BIKE INFO-->
-    <b-collapse id="bikeinfo" visible>
+    <b-collapse id="bikeinfo">
       <b-row align-h="center">
         <p>
           In the early 80's, Crecent's classical fender-friendly frames made way for tighter italian-inspired geometries from the likes of Rossin Record and similar columbus-forged bikes.
@@ -72,7 +72,9 @@
       <b-row align-h="center">
         <p>
           For more information of the 92319 line, see
-          <a href="http://www.cykelhobby.com/92319-83.html">@cykelhobby's</a>
+          <a
+            href="http://www.cykelhobby.com/92319-83.html"
+          >@cykelhobby's</a>
           excellent article on the 92319 series.
         </p>
       </b-row>
@@ -113,7 +115,6 @@ img {
 p {
   overflow: hidden;
   max-width: 75ch;
-
 
   font-size: 21px !important;
 
