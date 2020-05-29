@@ -4,7 +4,7 @@
       <b-col class="mx-auto" justify-content="center">
         <h1>A study in using modern web components. And bikes.</h1>
         <p>This site is yourstruly's training ground for very small scale full stack development. And bikes.</p>
-        <b-img class="fixed-ratio-resize" alt src="../assets/doge.webp" />
+        <b-img class="fixed-ratio-resize" alt src="../assets/custom_raspberry_pi_case.jpg" />
         <br />
         <br />
         <p>

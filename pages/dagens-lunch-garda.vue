@@ -49,6 +49,10 @@
           </b-col>
 
           <b-col>
+            <Kathmandu />
+          </b-col>
+
+          <b-col>
             <Mvg />
           </b-col>
 
@@ -77,18 +81,7 @@
           </b-col>
         </div>
       </div>
-      <div class="col-auto" id="language">
-        <b-button size="sm" class="active" variant="outline-light">
-          <nuxt-link to="/dagens-lunch-garda">
-            <country-flag country="se" size="normal" />
-          </nuxt-link>
-        </b-button>
-        <b-button size="sm" class variant="outline-light">
-          <nuxt-link to="/dailylunchgaarda">
-            <country-flag country="gb" size="normal" />
-          </nuxt-link>
-        </b-button>
-      </div>
+ 
       <br />
     </div>
 
@@ -108,6 +101,7 @@ import Ullevi from "@/components/Ullevi.vue";
 import Ulleochvi from "@/components/Ulleochvi.vue";
 import UG from "@/components/UG.vue";
 import Beat from "@/components/Beat.vue";
+import Kathmandu from "@/components/Kathmandu.vue";
 
 import axios from "axios";
 export default {
@@ -160,7 +154,7 @@ export default {
     Ullevi,
     Ulleochvi,
     UG,
-    CountryFlag
+    Kathmandu
   },
 
   methods: {

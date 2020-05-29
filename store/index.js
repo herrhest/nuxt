@@ -38,6 +38,10 @@ export const mutations = {
     //Ulle & Vi
     updateUlleochviMenu(state, ulleochviMenu) {
         state.ulleochviMenu = ulleochviMenu
+    },
+    //Kathmandu
+    updateKathmanduMenu(state, kathmanduMenu) {
+        state.kathmanduMenu = kathmanduMenu
     }
 
 }
@@ -127,6 +131,15 @@ export const actions = {
                 console.log(error);
             })
         commit('updateUlleochviMenu', ulleochviMenu)
+        
+        //Kathmandu
+        var kathmanduUrl = "https://ericthewolf.com/kathmandu";
+        var kathmanduMenu = await this.$axios
+            .get(kathmanduUrl).then(response => (this.kathmanduMenu = response.data))
+            .catch(function (error) {
+                console.log(error);
+            })
+        commit('updateKathmanduMenu', kathmanduMenu)
         
     }
 }
