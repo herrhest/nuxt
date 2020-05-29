@@ -12,13 +12,8 @@
     ></b-card>
     <br />
 
-    <b-collapse id="readmorebutton" visible>
-      <b-button
-        class="float-right"
-        variant="info"
-        v-b-toggle.readmorebutton
-        v-b-toggle.bikeinfo
-      >Read more</b-button>
+    <b-collapse visible id="readmorebutton">
+      <b-button class="float-right" variant="info" v-b-toggle="'readmorebutton bikeinfo'">Read more</b-button>
     </b-collapse>
 
     <!--BIKE INFO-->
@@ -79,12 +74,7 @@
         </p>
       </b-row>
 
-      <b-button
-        class="float-right"
-        v-b-toggle.bikeinfo
-        v-b-toggle.readmorebutton
-        variant="info"
-      >Read less</b-button>
+      <b-button class="float-right" v-b-toggle="'readmorebutton bikeinfo'" variant="info">Read less</b-button>
     </b-collapse>
     <!--BIKE INFO-->
   </b-card>

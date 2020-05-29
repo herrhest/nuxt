@@ -91,7 +91,7 @@
 
 <script>
 // //Restraurants
-import CountryFlag from "vue-country-flag";
+
 import Hildas from "@/components/Hildas.vue";
 import Aptitgarden from "@/components/Aptitgarden.vue";
 import Matsmak from "@/components/Matsmak.vue";
