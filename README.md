@@ -1,6 +1,6 @@
 # nuxt
 
-> My dazzling Nuxt.js project
+> The front end of a web crawler displaying lunch menus
 
 ## Build Setup
 
