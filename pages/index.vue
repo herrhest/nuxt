@@ -2,18 +2,12 @@
   <div class="home">
     <b-container>
       <b-col class="mx-auto" justify-content="center">
-<<<<<<< HEAD
+        
         <h1>
           Dagens lunch Gårda is just one
           <nuxt-link to="/dagens-lunch-garda">click</nuxt-link> away.
         </h1>
-=======
-        <h1>A study in using modern web components. And bikes.</h1>
-        <p>This site is yourstruly's training ground for very small scale full stack development. And bikes.</p>
-        <b-img class="fixed-ratio-resize" alt src="../assets/doge.webp" />
-        <br />
-        <br />
->>>>>>> parent of b70fe525... copied from da pi
+        
         <p>
           Check out
           <nuxt-link to="/dagens-lunch-garda">today's menu</nuxt-link> to see
@@ -48,8 +42,7 @@
         <p>
           <i
             >Yours sincerely,
-            <a href="mailto:yourstruly@ericthewolf.com"> @yourstruly</a></i
-          ><a href="https://github.com/herrhest">.</a>
+            <a href="mailto:yourstruly@ericthewolf.com"> @yourstruly</a></i>.
         </p>
       </b-col>
     </b-container>
@@ -67,7 +60,6 @@ export default {
       return this.$store.state.date.year;
     },
   },
-
   head() {
     return {
       title: "Home | ericthewolf",
@@ -79,7 +71,6 @@ export default {
       ],
       meta: [
         // hid is used as unique identifier. Do not use `vmid` for it as it will not work
-
         {
           hid: "ericthewolf_home",
           name: "description",
@@ -96,11 +87,8 @@ export default {
 p {
   overflow: hidden;
   max-width: 75ch;
-
   font-size: 21px !important;
-
   margin-bottom: 20px;
-
   font-weight: 300;
   line-height: 1.4;
 }

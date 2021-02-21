@@ -19,18 +19,12 @@
     "jquery": "^3.5.1",
     "js-yaml": "^3.14.0",
     "moment": "^2.24.0",
-<<<<<<< HEAD
     "nuxt": "^2.12.2",
     "postcss-svgo": "^4.0.2",
     "sass": "^1.26.7",
     "vue": "^2.6.11",
     "vue-meta": "^2.3.1",
     "vue-template-compiler": "^2.6.11"
-=======
-    "nuxt": "^2.10.2",
-    "vue-country-flag": "^1.3.1",
-    "vue-meta": "^2.3.1"
->>>>>>> parent of b70fe525... copied from da pi
   },
   "devDependencies": {
     "node-sass": "^4.14.1",
