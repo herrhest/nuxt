@@ -7,7 +7,6 @@
 
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav>
-          <b-nav-item to="Bikes">Bikes</b-nav-item>
           <b-nav-item to="dagens-lunch-garda">Dagens Lunch Gårda</b-nav-item>
         </b-navbar-nav>
       </b-collapse>

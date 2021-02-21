@@ -2,45 +2,46 @@
   <div class="home">
     <b-container>
       <b-col class="mx-auto" justify-content="center">
-        <h1>A study in using modern web components. And bikes.</h1>
-        <p>This site is yourstruly's training ground for very small scale full stack development. And bikes.</p>
-        <b-img class="fixed-ratio-resize" alt src="../assets/custom_raspberry_pi_case.jpg" />
-        <br />
-        <br />
+        <h1>
+          Dagens lunch Gårda is just one
+          <nuxt-link to="/dagens-lunch-garda">click</nuxt-link> away.
+        </h1>
         <p>
           Check out
-          <nuxt-link to="/dagens-lunch-garda">today's menu</nuxt-link>,
-          or check out some of
-          <nuxt-link to="/Bikes">my bikes</nuxt-link>.
-        </p>
-        <h2>Tech used for the menu page</h2>
-        <p>
-          Backend:
-          <br />
-          <a href="https://www.raspberrypi.org/">@raspberrypi</a> running
-          <a href="https://nodejs.org/en/">@nodeJS</a>.
-          <br />Using
-          <a href="http://cheerio.js.org/">@cheerio</a> as a collector to feed a
-          <a href="https://vuex.vuejs.org/">@vuex</a> store through a local
-          <a href="https://github.com/axios/axios">@axios</a> api.
+          <nuxt-link to="/dagens-lunch-garda">today's menu</nuxt-link> to see
+          lunch offers in Gårda, Göteborg, Sweden, Earth.
         </p>
 
-        <p>
-          Frontend:
-          <br />
-          <a href="https://nuxtjs.org/">@nuxt</a> and
-          <a href="https://bootstrap-vue.js.org/">@bootstrap-vue</a>.
-        </p>
+        <b-img
+          class="fixed-ratio-resize"
+          alt
+          src="../assets/custom_raspberry_pi_case.jpg"
+        />
+        <br />
+        <br />
+        <p></p>
 
         <p>
-          If you have questions, improvements or
-          <i>other</i>, don't hesitate to <a href="mailto:yourstruly@ericthewolf.com">
-           
-          contact me</a>.
+          Stuff used:
+          <br />
+          <br />
+          <a href="https://www.raspberrypi.org/">Raspberry pi 3b+</a> running
+          <a href="https://ubuntu.com/download/server">ubuntu server</a>. Using
+          <a href="http://cheerio.js.org/">cheerio</a> as a collector to feed a
+          <a href="https://vuex.vuejs.org/">vuex</a>/<a
+            href="https://nuxtjs.org/"
+            >nuxt</a
+          >
+          store through a <a href="https://nodejs.org/en/">node</a> server side
+          <a href="https://github.com/axios/axios">axios</a> api.
+          <a href="https://bootstrap-vue.js.org/">Bootstrap-vue</a> is used to
+          make stuff look somewhat presentable.
         </p>
         <p>
-                    
-          <i>Yours sincerely, yourstruly, {{month}}, {{year}}.</i>
+          <i
+            >Yours sincerely,
+            <a href="mailto:yourstruly@ericthewolf.com"> @yourstruly</a></i
+          ><a href="https://github.com/herrhest">.</a>
         </p>
       </b-col>
     </b-container>
@@ -56,7 +57,7 @@ export default {
     },
     year() {
       return this.$store.state.date.year;
-    }
+    },
   },
 
   head() {
@@ -65,8 +66,8 @@ export default {
       link: [
         {
           rel: "canonical",
-          href: "https://ericthewolf.com" + this.$route.path
-        }
+          href: "https://ericthewolf.com" + this.$route.path,
+        },
       ],
       meta: [
         // hid is used as unique identifier. Do not use `vmid` for it as it will not work
@@ -75,11 +76,11 @@ export default {
           hid: "ericthewolf_home",
           name: "description",
           content:
-            "This site consists of @yourstruly's attempts of using modern web components. Have a look at today's lunch menu if you want to eat @ Gårda, Göteborg."
-        }
-      ]
+            "This site consists of @yourstruly's attempts of using modern web components. Have a look at today's lunch menu if you want to eat @ Gårda, Göteborg.",
+        },
+      ],
     };
-  }
+  },
 };
 </script>
 
@@ -99,5 +100,5 @@ p {
   max-width: 100%;
   height: auto;
   width: auto\9;
-  }
+}
 </style>
