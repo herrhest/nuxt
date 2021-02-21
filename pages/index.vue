@@ -2,10 +2,18 @@
   <div class="home">
     <b-container>
       <b-col class="mx-auto" justify-content="center">
+<<<<<<< HEAD
         <h1>
           Dagens lunch Gårda is just one
           <nuxt-link to="/dagens-lunch-garda">click</nuxt-link> away.
         </h1>
+=======
+        <h1>A study in using modern web components. And bikes.</h1>
+        <p>This site is yourstruly's training ground for very small scale full stack development. And bikes.</p>
+        <b-img class="fixed-ratio-resize" alt src="../assets/doge.webp" />
+        <br />
+        <br />
+>>>>>>> parent of b70fe525... copied from da pi
         <p>
           Check out
           <nuxt-link to="/dagens-lunch-garda">today's menu</nuxt-link> to see
