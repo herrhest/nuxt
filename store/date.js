@@ -32,7 +32,7 @@ export var getMonth = function () {
 
 }
 export var getWeek = function () {
-  var week = moment().format('w')
+  var week = moment().format('W')
   return week
 }
 export var getYear = function () {
