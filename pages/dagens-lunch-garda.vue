@@ -122,7 +122,7 @@ export default {
 
   head() {
     return {
-      title: "Dagens Lunch G<C3><A5>rda | ericthewolf",
+      title: "Dagens Lunch Gårda | ericthewolf",
       link: [
         {
           rel: "canonical",
