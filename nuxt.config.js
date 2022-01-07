@@ -1,10 +1,10 @@
 import pkg from './package'
 
 //ENABLE FOR PROD
-import fs from 'fs'
-const privateKey = fs.readFileSync('/etc/letsencrypt/live/ericthewolf.com/privkey.pem', 'utf8');
-const certificate = fs.readFileSync('/etc/letsencrypt/live/ericthewolf.com/cert.pem', 'utf8');
-const ca = fs.readFileSync('/etc/letsencrypt/live/ericthewolf.com/fullchain.pem', 'utf8');
+// import fs from 'fs'
+// const privateKey = fs.readFileSync('/etc/letsencrypt/live/ericthewolf.com/privkey.pem', 'utf8');
+// const certificate = fs.readFileSync('/etc/letsencrypt/live/ericthewolf.com/cert.pem', 'utf8');
+// const ca = fs.readFileSync('/etc/letsencrypt/live/ericthewolf.com/fullchain.pem', 'utf8');
 
 export default {
   mode: 'universal',
@@ -32,15 +32,15 @@ export default {
 
   //ENABLE FOR PROD
   //HTTPS Server
-  server: {
-    port: 443, // default: 3000
-    host: 'raspberrypi', // default: localhost
-    https: {
-      key: privateKey,
-      cert: certificate,
-      ca: ca
-    }
-  },
+  // server: {
+  //   port: 443, // default: 3000
+  //   host: 'raspberrypi', // default: localhost
+  //   https: {
+  //     key: privateKey,
+  //     cert: certificate,
+  //     ca: ca
+  //   }
+  // },
 
   /*
   ** Customize the progress-bar color

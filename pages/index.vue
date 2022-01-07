@@ -2,47 +2,15 @@
   <div class="home">
     <b-container>
       <b-col class="mx-auto" justify-content="center">
-        
-        <h1>
-          Dagens lunch Gårda is just one
-          <nuxt-link to="/dagens-lunch-garda">click</nuxt-link> away.
-        </h1>
-        
-        <p>
-          Check out
-          <nuxt-link to="/dagens-lunch-garda">today's menu</nuxt-link> to see
-          lunch offers in Gårda, Göteborg, Sweden, Earth.
-        </p>
+        <h1>Dagens lunch Gårda is no more :(</h1>
 
-        <b-img
-          class="fixed-ratio-resize"
-          alt
-          src="../assets/custom_raspberry_pi_case.jpg"
-        />
-        <br />
-        <br />
-        <p></p>
+       
 
-        <p>
-          Stuff used:
-          <br />
-          <br />
-          <a href="https://www.raspberrypi.org/">Raspberry pi 3b+</a> running
-          <a href="https://ubuntu.com/download/server">ubuntu server</a>. Using
-          <a href="http://cheerio.js.org/">cheerio</a> as a collector to feed a
-          <a href="https://vuex.vuejs.org/">vuex</a>/<a
-            href="https://nuxtjs.org/"
-            >nuxt</a
-          >
-          store through a <a href="https://nodejs.org/en/">node</a> server side
-          <a href="https://github.com/axios/axios">axios</a> api.
-          <a href="https://bootstrap-vue.js.org/">Bootstrap-vue</a> is used to
-          make stuff look somewhat presentable.
-        </p>
         <p>
           <i
             >Yours sincerely,
-            <a href="mailto:yourstruly@ericthewolf.com"> @yourstruly</a></i>.
+            <a href="mailto:yourstruly@ericthewolf.com"> @yourstruly</a></i
+          >.
         </p>
       </b-col>
     </b-container>
@@ -75,7 +43,7 @@ export default {
           hid: "ericthewolf_home",
           name: "description",
           content:
-            "This site consists of @yourstruly's attempts of using modern web components. Have a look at today's lunch menu if you want to eat @ Gårda, Göteborg.",
+            "This site consists of @yourstruly's attempts of using web components.",
         },
       ],
     };

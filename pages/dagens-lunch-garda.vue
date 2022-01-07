@@ -6,82 +6,24 @@
           <div class="col-lg">
             <h1>Dagens Lunch Gårda, Vecka {{weekNumber}}</h1>
             <h2 class="lead">
-              <i>Dagens lunch Gårda</i> är din dagliga inspritationskälla för lunch i Gårda, Göteborg.
-              <br />Restaurangerna nedan är sorterade på avstånd från ett kontor någonstans på Vädursgatan.
+              <i>Dagens lunch Gårda</i> Var en daglig inspritationskälla för lunch i Gårda, Göteborg.
+              <br />Sidan underhålls inte längre, RIP!
             </h2>
+             <video autoplay loop muted preload="auto" poster="false">
+          <source src="../assets/racon.mp4" type="video/mp4" />
+          <source src="../assets/racon.webm" type="video/webm" />
+          <p>
+            Your browser doesn't support HTML video. Here is a
+            <a href="../assets/racon.mp4">link to the video</a> instead.
+          </p>
+        </video>
           </div>
         </div>
       </div>
 
       <div class="float-right" id="lang"></div>
 
-      <!-- Hide if its weekend -->
-
-      <div v-if="today <0 || today >4">
-        <b-jumbotron bg-variant="info" text-variant="white">
-          <h1 class="display-3">No food today :(</h1>
-          <hr class="my-2" />
-          <p class="lead">Check back tomorrow</p>
-        </b-jumbotron>
-      </div>
-      <!-- show below if it is weekday -->
-      <div v-else>
-        <b-tabs
-          align="center"
-          v-model="today"
-          content-class="mt-3"
-          active-nav-item-class="text-dark "
-        >
-          <b-tab title-link-class="text-secondary" title="Måndag" @click="handler(0)"></b-tab>
-          <b-tab title-link-class="text-secondary" title="Tisdag" @click="handler(1)"></b-tab>
-          <b-tab title-link-class="text-secondary" title="Onsdag" @click="handler(2)"></b-tab>
-          <b-tab title-link-class="text-secondary" title="Torsdag" @click="handler(3)"></b-tab>
-          <b-tab title-link-class="text-secondary" title="Fredag" @click="handler(4)"></b-tab>
-        </b-tabs>
-
-        <div class="cardrow d-inline-flex justify-content-center flex-row">
-          <b-col>
-            <Hildas />
-          </b-col>
-
-          <b-col>
-            <Aptitgarden />
-          </b-col>
-
-          <b-col>
-            <Kathmandu />
-          </b-col>
-
-          <b-col>
-            <Mvg />
-          </b-col>
-
-          <b-col>
-            <Matsmak />
-          </b-col>
-
-          <b-col>
-            <Vallagat />
-          </b-col>
-
-          <b-col>
-            <Beat />
-          </b-col>
-
-          <b-col>
-            <Ullevi />
-          </b-col>
-
-          <b-col>
-            <UG />
-          </b-col>
-
-          <b-col>
-            <Ulleochvi />
-          </b-col>
-        </div>
-      </div>
-
+      
       <br />
     </div>
 
@@ -92,7 +34,7 @@
 <script>
 // //Restraurants
 
-import Hildas from "@/components/Hildas.vue";
+/* import Hildas from "@/components/Hildas.vue";
 import Aptitgarden from "@/components/Aptitgarden.vue";
 import Matsmak from "@/components/Matsmak.vue";
 import Mvg from "@/components/Mvg.vue";
@@ -101,7 +43,7 @@ import Ullevi from "@/components/Ullevi.vue";
 import Ulleochvi from "@/components/Ulleochvi.vue";
 import UG from "@/components/UG.vue";
 import Beat from "@/components/Beat.vue";
-import Kathmandu from "@/components/Kathmandu.vue";
+import Kathmandu from "@/components/Kathmandu.vue"; */
 
 import axios from "axios";
 export default {
@@ -145,7 +87,7 @@ export default {
   },
 
   components: {
-    Hildas,
+   /*  Hildas,
     Aptitgarden,
     Matsmak,
     Mvg,
@@ -154,7 +96,7 @@ export default {
     Ullevi,
     Ulleochvi,
     UG,
-    Kathmandu
+    Kathmandu */
   },
 
   methods: {

@@ -20,6 +20,7 @@
     "js-yaml": "^3.14.0",
     "moment": "^2.24.0",
     "nuxt": "^2.12.2",
+    "nuxt-video-player": "^1.0.17",
     "postcss-svgo": "^4.0.2",
     "sass": "^1.26.7",
     "vue": "^2.6.11",
